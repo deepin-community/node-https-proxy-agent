@@ -1,0 +1,41 @@
+Source: node-https-proxy-agent
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Andrius Merkys <merkys@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+ expect <!nocheck>,
+ mocha <!nocheck>,
+ node-agent-base,
+ node-babel7,
+ node-events,
+ node-debug,
+ node-proxy,
+ node-typescript,
+ node-types-events,
+ openssl <!nocheck>,
+ dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-https-proxy-agent
+Vcs-Git: https://salsa.debian.org/js-team/node-https-proxy-agent.git
+Homepage: https://github.com/TooTallNate/node-https-proxy-agent#readme
+Rules-Requires-Root: no
+
+Package: node-https-proxy-agent
+Architecture: all
+Depends: node-agent-base,
+ node-debug (>= 4),
+ node-events,
+ ${misc:Depends}
+Provides: ${nodejs:Provides}
+Description: HTTP(s) proxy http.Agent implementation for HTTPS
+ This module provides an http.Agent implementation that connects to a specified
+ HTTP or HTTPS proxy server, and can be used with the built-in 'https' module.
+ .
+ Specifically, this 'Agent' implementation connects to an intermediary "proxy"
+ server and issues the CONNECT, which tells the proxy to open a direct TCP
+ connection to the destination server.
+ .
+ Since this agent implements the CONNECT HTTP method, it also works with other
+ protocols that use this method when connecting over proxies (i.e. WebSockets).

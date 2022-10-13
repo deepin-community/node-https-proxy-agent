@@ -1,0 +1,17 @@
+Description: export commonjs files
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2021-10-14
+
+--- a/tootallnate-once/package.json
++++ b/tootallnate-once/package.json
+@@ -3,7 +3,8 @@
+   "version": "3.0.0",
+   "description": "Creates a Promise that waits for a single event",
+   "type": "module",
+-  "main": "./dist/index.js",
++  "main": "./dist/index.cjs",
++  "module": "./dist/index.cjs",
+   "types": "./dist/index.d.ts",
+   "files": [
+     "dist",

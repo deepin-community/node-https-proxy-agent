@@ -1,0 +1,78 @@
+node-https-proxy-agent (5.0.1+~cs8.0.0-1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>  Thu, 16 Jun 2022 13:57:31 +0800
+
+node-https-proxy-agent (5.0.1+~cs8.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 5.0.1+~cs8.0.0
+
+ -- Yadd <yadd@debian.org>  Tue, 03 May 2022 14:07:13 +0200
+
+node-https-proxy-agent (5.0.0+~cs8.0.0-4) unstable; urgency=medium
+
+  * Team upload
+  * Fix filenamemangle
+  * Fix test for nodejs 14 (Closes: #1008512)
+
+ -- Yadd <yadd@debian.org>  Mon, 28 Mar 2022 16:40:16 +0200
+
+node-https-proxy-agent (5.0.0+~cs8.0.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Update typescript workaround (Closes: #1002269)
+
+ -- Yadd <yadd@debian.org>  Tue, 21 Dec 2021 18:03:15 +0100
+
+node-https-proxy-agent (5.0.0+~cs8.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Build @tootallnate/once commonjs file
+  * Add test for http-proxy-agent
+
+ -- Yadd <yadd@debian.org>  Thu, 14 Oct 2021 12:13:54 +0200
+
+node-https-proxy-agent (5.0.0+~cs8.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.0, no changes needed.
+  * Add debian/gbp.conf
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Embed http-proxy-agent, @tootallnate/once
+  * Build http-proxy-agent
+  * Replace @types/* hook by debian/nodejs/ext*
+  * Build components with tsc
+  * Add dependency to node-events
+  * Update copyright
+  * Drop dependency to nodejs
+
+ -- Yadd <yadd@debian.org>  Wed, 13 Oct 2021 18:59:18 +0200
+
+node-https-proxy-agent (5.0.0-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ Andrius Merkys ]
+  * Dropping dependency on node-typescript-types (Closes: #979805).
+
+ -- Andrius Merkys <merkys@debian.org>  Mon, 11 Jan 2021 07:34:04 -0500
+
+node-https-proxy-agent (5.0.0-2) unstable; urgency=medium
+
+  * Bumping debhelper-compat (no changes).
+  * Adding 'Rules-Requires-Root: no'.
+  * Dropping snakeoil.key patch.
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 27 Oct 2020 11:49:11 -0400
+
+node-https-proxy-agent (5.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #972549)
+
+ -- Andrius Merkys <merkys@debian.org>  Mon, 04 May 2020 01:26:28 -0400

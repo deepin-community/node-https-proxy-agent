@@ -1,0 +1,6 @@
+# Same authors
+add-component-copyright http-proxy-agent *
+add-component-copyright tootallnate-once *
+
+# False positive
+very-long-line-length-in-source-file tootallnate-once/src/overloaded-parameters.ts line *

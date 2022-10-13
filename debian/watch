@@ -1,0 +1,19 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-https-proxy-agent-$1/ \
+ https://github.com/TooTallNate/node-https-proxy-agent/releases .*/archive/.*/v?([\d\.]+).tar.gz group
+
+opts=\
+component=http-proxy-agent,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-node-http-proxy-agent-$1/ \
+ https://github.com/TooTallNate/node-http-proxy-agent/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=tootallnate-once,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-once-$1/ \
+ https://github.com/TooTallNate/once/tags .*/archive.*/v?([\d\.]+).tar.gz checksum

@@ -1,0 +1,23 @@
+Description: workaround tsc update
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2021-10-13
+
+--- a/tootallnate-once/src/types.ts
++++ b/tootallnate-once/src/types.ts
+@@ -19,13 +19,8 @@
+ 	EventParameters<Emitter>
+ >;
+ 
+-export type EventListenerParameters<
+-	Emitter extends EventEmitter,
+-	Event extends EventNames<Emitter>
+-> = WithDefault<
+-	Parameters<EventListener<EventParameters<Emitter>, Event>>,
+-	unknown[]
+->;
++// @ts-ignore
++export type EventListenerParameters< Emitter extends EventEmitter, Event extends EventNames<Emitter> > = WithDefault< Parameters<EventListener<EventParameters<Emitter>, Event>>, unknown[] >;
+ 
+ export type WithDefault<T, D> = [T] extends [never] ? D : T;
+ 

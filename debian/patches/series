@@ -1,0 +1,3 @@
+workaround-tsc-update.patch
+build-commonjs-files.patch
+fix-test-for-nodejs-14.patch

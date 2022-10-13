@@ -1,0 +1,2 @@
+tsc
+babeljs --presets '@babel/preset-env' -o dist/index.cjs dist/index.js
