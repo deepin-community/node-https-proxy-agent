@@ -1,8 +1,17 @@
-node-https-proxy-agent (5.0.1+~cs8.0.0-1) UNRELEASED; urgency=medium
+node-https-proxy-agent (5.0.1+~cs8.0.0-3) unstable; urgency=medium
 
-  * update
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-https-proxy-agent: Add Multi-Arch: foreign.
 
- -- Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>  Thu, 16 Jun 2022 13:57:31 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 28 Nov 2022 17:37:39 +0000
+
+node-https-proxy-agent (5.0.1+~cs8.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.1, no changes needed.
+  * Replace /releases by /tags in GitHub urls
+
+ -- Yadd <yadd@debian.org>  Mon, 31 Oct 2022 12:04:56 +0100
 
 node-https-proxy-agent (5.0.1+~cs8.0.0-1) unstable; urgency=medium
 
