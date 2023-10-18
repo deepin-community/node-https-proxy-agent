@@ -16,7 +16,7 @@ Build-Depends: debhelper-compat (= 13),
  node-types-events,
  openssl <!nocheck>,
  dh-sequence-nodejs
-Standards-Version: 4.6.0
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-https-proxy-agent
 Vcs-Git: https://salsa.debian.org/js-team/node-https-proxy-agent.git
 Homepage: https://github.com/TooTallNate/node-https-proxy-agent#readme
@@ -29,6 +29,7 @@ Depends: node-agent-base,
  node-events,
  ${misc:Depends}
 Provides: ${nodejs:Provides}
+Multi-Arch: foreign
 Description: HTTP(s) proxy http.Agent implementation for HTTPS
  This module provides an http.Agent implementation that connects to a specified
  HTTP or HTTPS proxy server, and can be used with the built-in 'https' module.
